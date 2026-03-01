@@ -1,0 +1,11 @@
+# Replace previous model dependencies with these:
+git+https://github.com/WildChlamydia/MiVOLO.git
+transformers==4.51.0
+accelerate==1.8.1
+torch>=2.0.0
+torchvision
+opencv-python>=4.8.0
+PyQt5>=5.15.0
+numpy>=1.24.0
+requests
+tqdm

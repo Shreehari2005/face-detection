@@ -1,0 +1,12 @@
+Command for req skip error:- 
+Get-Content req.txt | ForEach-Object {
+    try {
+        pip install $_
+    }
+    catch {
+        Write-Warning "⚠️ Failed to install $_ — skipping."
+    }
+}
+
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
